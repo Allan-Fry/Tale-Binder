@@ -9,11 +9,27 @@ class App extends Component {
   render() {
     return (
       <Router>
+          <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <Link to="/" className="navbar-brand">Talebinder</Link>
+            <div className="collpase navbar-collapse">
+              <ul className="navbar-nav mr-auto">
+                <li className="navbar-item">
+                  <Link to="/" className="nav-link">Home</Link>
+                </li>
+                <li className="navbar-item">
+                  <Link to="/Edit" className="nav-link">Edit</Link>
+                </li>
+                <li className="navbar-item">
+                  <Link to="/Manage" className="nav-link">Manage</Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <br/>
         <Route exact path="/" component={home} />
         <Route exact path="/Edit" component={edit} />
         <Route exact path="/Manage" component={manage} />
-        <div className="container">
-          <h2>MERN-Stack Todo App</h2>
         </div>
       </Router>
     );
