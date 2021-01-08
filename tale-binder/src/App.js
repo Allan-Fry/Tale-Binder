@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import home from "./pages/home";
+import edit from "./pages/edit";
+import manage from "./pages/manage";
+
 class App extends Component {
   render() {
     return (
