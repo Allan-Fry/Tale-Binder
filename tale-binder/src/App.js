@@ -18,7 +18,7 @@ class App extends Component {
                   <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li className="navbar-item">
-                  <Link to="/Edit" className="nav-link">Edit</Link>
+                  <Link to="/Edit/1" className="nav-link">Edit</Link>
                 </li>
                 <li className="navbar-item">
                   <Link to="/Manage" className="nav-link">Manage</Link>
@@ -28,7 +28,7 @@ class App extends Component {
           </nav>
           <br/>
         <Route exact path="/" component={home} />
-        <Route exact path="/Edit" component={edit} />
+        <Route exact path="/Edit/:id" component={edit} />
         <Route exact path="/Manage" component={manage} />
         </div>
       </Router>
